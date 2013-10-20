@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 
     jshint: {
 
-      files: ['client/*.js', 'server/*/*.js', 'test/specs/*.js'],
+      files: ['client/*.js', 'controllers/*.js', 'models/*.js', 'server/*/*.js', 'test/specs/*.js'],
       options: {
 
         // seems jsHint doesn't like Mongoose Schemas...
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
     complexity: {
 
         generic: {
-            src: ['server/*.js', 'client/*.js'],
+            src: ['server/*.js', 'server/middleware/*.js', 'controllers/*.js', 'client/*.js'],
             options: {
 
                 /*
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
           jshint : false
         },
         files: {
-          'reports': ['server/*.js', 'client/*.js'],
+          'reports': ['server/*/*.js', 'client/*.js'],
         },
       },
     }

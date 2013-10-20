@@ -6,11 +6,11 @@ exports.route = function (req, res){
     var _requested_controller = _uriArray.shift();
     var _controller           = require('../../controllers/' + _requested_controller);
 
-    if(_uriArray > 0){
+    if(_uriArray.length > 0){
 
         _controller[_uriArray.shift()](req, res, _uriArray);
     } else {
 
         _controller.index(req, res);
-    };
+    }
 };

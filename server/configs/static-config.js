@@ -1,26 +1,29 @@
-exports.statics = {
-    'ico': {
-        path: 'public',
-        header: 'image/x-icon'
-    },
-    'jpg': {
-        path: 'public',
-        header: 'image/jpg'
-    },
-    'gif': {
-        path:'public',
-        header: 'image/gif'
-    },
-    'png': {
-        path: 'public',
-        header: 'image/png'
-    },
-    'css': {
-        path: 'public',
-        header: 'text/css'
-    },
-    'js' : {
-        path: 'public',
-        header: 'text/javascript'
-    }
+exports.ico = {
+    path: 'public',
+    header: 'image/x-icon'
+};
+
+exports.jpg = {
+    path: 'public',
+    header: 'image/jpg'
+};
+
+exports.gif = {
+    path:'public',
+    header: 'image/gif'
+};
+
+exports.png = {
+    path: 'public',
+    header: 'image/png'
+};
+
+exports.css = {
+    path: 'public',
+    header: 'text/css'
+};
+
+exports.js = {
+    path: 'public',
+    header: 'text/javascript'
 };

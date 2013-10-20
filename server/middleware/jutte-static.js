@@ -1,7 +1,7 @@
 var fs         = require('fs');
 var path       = require('path');
 // var controller = require('./controllers');
-var statics = require('../configs/static-config').statics;
+var statics = require('../configs/static-config');
 
 exports.handle = function(req, res, next){
 
@@ -28,5 +28,5 @@ exports.handle = function(req, res, next){
                 // controller.writeResponse(res, 404, "<h1>Custom 404</h1>" + err);
             }
         });
-    };
+    }
 };

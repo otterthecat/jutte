@@ -1,3 +1,1 @@
-var jutte = require('./server/jutte');
-
-jutte.start('1337');
+var jutte = require('./server/jutte').start('1337');
