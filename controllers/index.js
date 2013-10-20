@@ -1,6 +1,6 @@
+var privateMethods = require('../lib/Controller');
+
 exports.index = function(req, res){
 
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.write('hello world');
-    res.end();
+    privateMethods.render(res,'views/index.html');
 };
