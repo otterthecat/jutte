@@ -1,10 +1,7 @@
 exports.route = function (req, res){
 
-    var _uri                  = req.url.substr(1);
-    var _uriArray             = _uri.split('/');
-
-    var _requested_controller = _uriArray.shift();
-    var _controller           = require('../../controllers/' + _requested_controller);
+    var _uriArray             = req.url.substr(1).split('/');
+    var _controller           = require('../../controllers/' + _uriArray.shift());
 
     if(_uriArray.length > 0){
 

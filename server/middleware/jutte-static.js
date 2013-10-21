@@ -1,6 +1,5 @@
-var fs         = require('fs');
-var path       = require('path');
-// var controller = require('./controllers');
+var fs      = require('fs');
+var path    = require('path');
 var statics = require('../configs/static-config');
 
 exports.handle = function(req, res, next){
@@ -25,7 +24,6 @@ exports.handle = function(req, res, next){
                 res.writeHeader(404, {'Content-Type': "text/html"});
                 res.write("static file not found");
                 res.end();
-                // controller.writeResponse(res, 404, "<h1>Custom 404</h1>" + err);
             }
         });
     }
