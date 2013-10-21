@@ -41,7 +41,13 @@ module.exports = function(grunt) {
     complexity: {
 
         generic: {
-            src: ['server/*.js', 'server/middleware/*.js', 'controllers/*.js', 'client/*.js'],
+            src: [
+                  'server/middleware/*.js',
+                  'server/*.js',
+                  'controllers/*.js',
+                  'lib/*.js',
+                  'client/*.js'
+                ],
             options: {
 
                 /*
@@ -100,7 +106,12 @@ module.exports = function(grunt) {
           jshint : false
         },
         files: {
-          'reports': ['server/*/*.js', 'client/*.js'],
+          'reports': ['server/*.js',
+                      'server/*/*.js',
+                      'lib/*.js',
+                      'controllers/*.js',
+                      'client/*.js'
+                      ]
         },
       },
     }
